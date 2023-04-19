@@ -17,7 +17,7 @@ module.exports = (serviceName) => {
     serviceName,
     host: 'localhost',
     port: 6832,
-    endpoint: '/api/traces',
+    endpoint: 'http://localhost:14268/api/traces',
   });
   const provider = new NodeTracerProvider({
     resource: new Resource({
